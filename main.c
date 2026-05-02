@@ -3,7 +3,7 @@
 #include <string.h>
 #include "database.h"
 
-void show_help() {
+void show_help(void) {
     printf("Notes Manager - Simple CLI\n\n");
     printf("Usage:\n");
     printf("  notes add \"title\" \"content\"       - Add a new note\n");
