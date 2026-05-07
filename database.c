@@ -36,7 +36,7 @@ void add_note(const char *title, const char *content){
     const char *sql = "INSERT INTO notes (title, content)" 
     "VALUES (?, ?);";
     sqlite3_stmt *stmt;
-    int rc = sqlite3_prepare_v2(db, sql, -1, &stmt, NULL);
+    int rc = sqlite3_prepare_v2(db, sql, -1, &stmt, NULL);//prepare the SQL statement
     if (rc != SQLITE_OK) {
         printf("Failed to prepare statement\n");
         return;
